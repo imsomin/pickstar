@@ -2,7 +2,7 @@ select user
 from dual;
 --SCOTT
 
---(1)°Ô½ÃÆÇ Å×ÀÌºí »ý¼º
+--(1)ê²Œì‹œíŒ í…Œì´ë¸” ìƒì„±
 CREATE TABLE tblBoard(
     b_num NUMBER PRIMARY KEY NOT NULL,
     b_subject VARCHAR2(50),
@@ -12,38 +12,34 @@ CREATE TABLE tblBoard(
     b_date VARCHAR2(20),
     b_readcount NUMBER
 );
---Table TBLBOARDÀÌ(°¡) »ý¼ºµÇ¾ú½À´Ï´Ù.
+--Table TBLBOARDì´(ê°€) ìƒì„±ë˜ì—ˆìŠµë‹ˆë‹¤.
 
---(2)ÀüÃ¼ ·¹ÄÚµå °Ë»ö
+--(2)ì „ì²´ ë ˆì½”ë“œ ê²€ìƒ‰
 SELECT * FROM tblBoard ORDER BY b_num DESC;
 
 
---(3)ÀÚµ¿ Áõ°¡°ª ¼³Á¤ 
+--(3)ìžë™ ì¦ê°€ê°’ ì„¤ì • 
 CREATE SEQUENCE b_num_seq START WITH 1;
---Sequence B_NUM_SEQÀÌ(°¡) »ý¼ºµÇ¾ú½À´Ï´Ù.
+--Sequence B_NUM_SEQì´(ê°€) ìƒì„±ë˜ì—ˆìŠµë‹ˆë‹¤.
 
 
---( b_num ¡æ b_num_seq º¯¼ö )
---(½ÃÄö½º´Â ±âº»ÀûÀ¸·Î 20°³ ´ÜÀ§·Î ÁÖ¾îÁø´Ù.)
-
-
---ÀÓÀÇÀÇ ·¹ÄÚµå »ðÀÔ
+--ìž„ì˜ì˜ ë ˆì½”ë“œ ì‚½ìž…
 INSERT INTO tblBoard VALUES(b_num_seq.nextval, 'subject', 'pwd', 'content', 'writer', sysdate, 0);
-INSERT INTO tblBoard VALUES(b_num_seq.nextval, '°¡³ª´Ù', 'pwd', 'content', '°¡³ª´Ù', sysdate, 0);
---1 Çà ÀÌ(°¡) »ðÀÔµÇ¾ú½À´Ï´Ù. * 2
+INSERT INTO tblBoard VALUES(b_num_seq.nextval, 'ê°€ë‚˜ë‹¤', 'pwd', 'content', 'ê°€ë‚˜ë‹¤', sysdate, 0);
+--1 í–‰ ì´(ê°€) ì‚½ìž…ë˜ì—ˆìŠµë‹ˆë‹¤. * 2
 
---ÀüÃ¼ ·¹ÄÚµå »èÁ¦
+--ì „ì²´ ë ˆì½”ë“œ ì‚­ì œ
 DELETE FROM tblBoard;
---2°³ Çà ÀÌ(°¡) »èÁ¦µÇ¾ú½À´Ï´Ù.
+--2ê°œ í–‰ ì´(ê°€) ì‚­ì œë˜ì—ˆìŠµë‹ˆë‹¤.
 
---Å×ÀÌºí »èÁ¦
+--í…Œì´ë¸” ì‚­ì œ
 DROP TABLE tblBoard;
 
---ÀÚµ¿ Áõ°¡ °ª »èÁ¦
+--ìžë™ ì¦ê°€ ê°’ ì‚­ì œ
 DROP SEQUENCE b_num_seq;
 
---Ä¿¹Ô
+--ì»¤ë°‹
 COMMIT;
---Ä¿¹Ô ¿Ï·á.
+--ì»¤ë°‹ ì™„ë£Œ.
 
 
