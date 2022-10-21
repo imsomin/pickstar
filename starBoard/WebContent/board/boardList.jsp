@@ -32,7 +32,7 @@ List<BoardDTO> list = (List<BoardDTO>)request.getAttribute("list");
 
 <div align="center">
 	<!-- http://localhost:8090/starBoard/boardList.do 로 연결~-->
-	<h3>[게시판 전체 목록 보기]</h3>
+	<h3> 🎀 전체글 목록 💎 </h3>
 	<!-- <table border="1" style="width: 80%;"> -->
 	<table class="table table-striped" style="text-align: center; border: 1px solid #dddddd">
 		<tr>

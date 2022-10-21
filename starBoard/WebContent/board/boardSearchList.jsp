@@ -27,7 +27,7 @@ List<BoardDTO> list = (List<BoardDTO>) request.getAttribute("list");
 </head>
 <body>
 <div align="center">
-	<h3>[검색 결과]</h3>
+	<h3> 🔔 검색 결과 🎶 </h3>
 	<table class="table table-striped" style="text-align: center; border: 1px solid #dddddd">
 		<tr>
 			<th style="background-color: #eeeee; text-align: center;">번호</th>

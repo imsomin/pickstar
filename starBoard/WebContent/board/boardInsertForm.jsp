@@ -39,7 +39,7 @@ function fnLoad() {
 </head>
 <body onload="fnLoad()">
 <div align="center">
-	<h3>[게시판 글쓰기]</h3>
+	<h3> 🎠 글 작성하기 🎡 </h3>
 	<form action="boardInsert.do" method="post" name="regForm" onsubmit="return fnSubmit()" onreset="return fnReset()">
 		<table border="1" style="width: 80%;">
 			<tr>

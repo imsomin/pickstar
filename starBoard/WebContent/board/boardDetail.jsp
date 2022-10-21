@@ -70,7 +70,7 @@ function fnUpdate(b_pwd) {
 
 
 <div align="center">
-	<h3>[글 내용 조회]</h3>
+	<h3> 🎉 작성글 내용 🎊 </h3>
 	<table border="1" style="width: 80%;">
 		<tr>
 			<th style="background-color: #eeeee; text-align: center;">작성자</th>
@@ -86,10 +86,9 @@ function fnUpdate(b_pwd) {
 			<th style="background-color: #eeeee; text-align: center;">내용</th>
 			
 			<td colspan="3">
-				<%--=dto.getB_content().replace("\r\n", "<br />") --%>	<!-- 자바 코드로 줄바꿈 처리 -->
 				${fn : replace(dto.b_content, enter, "<br />") }
 				<!-- fn:replace(string, before, after) -->
-				<!-- string내에 있는 before 문자열을 after 문자열로 모두 변경해서 반환  -->
+				<!-- string내에 있는 before 문자열을 after 문자열로 반환함을 의미  -->
 			</td>
 		</tr>
 		<tr>

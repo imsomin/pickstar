@@ -41,7 +41,7 @@ function fnReset() {
 </head>
 <body>
 <div align="center">
-	<h3>[게시판 글 수정하기]</h3>
+	<h3> 🎈 작성글 수정하기 🎆 </h3>
 	<form action="boardUpdate.do" method="post" onsubmit="return fnSubmit()" onreset="return fnReset()">
 	<input type="hidden" name="b_num" value="${dto.b_num }"/>
 		<table border="1" style="width: 80%;">
