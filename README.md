@@ -2,8 +2,12 @@
 
 프로젝트 이름
 
+<img src="https://user-images.githubusercontent.com/100775215/201479966-43019484-c41f-4778-b0d0-426698732fae.PNG" width="250" height="150">
+
+
 프로젝트 소개
 - 'Pick Your Star' 는 환경보호를 주제로 하여 모임 형성 및 정보 공유를 목적으로 하는 커뮤니티 웹 사이트입니다.
+
 
 주요 기술스택
 
