@@ -15,19 +15,14 @@
 <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
 
 <!-- Google API 활용하여 폰트 적용 -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sunflower&display=swap" rel="stylesheet">
-
+<!-- preconnect : 브라우저에 미리 서버에 대한 연결을 수행하도록 지시한다 -->
+<!-- CORS(Cross Origin Resource Sharing) : 도메인이 다른 자원에 리소스를 요청할 때 접근 권한을 부여하는 매커니즘 -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Stylish&display=swap" rel="stylesheet">
 
 <style type="text/css">
-    .txt_animate span
-    {
-     /* font-family: 'Gugi', cursive;  */
-	 /* font-family: 'Sunflower', sans-serif;  */
+    .txt_animate span{
 	font-size: 50px;
     font-family: 'Stylish', sans-serif;
     position: relative;
