@@ -34,6 +34,21 @@ li {
 	top: -130px;
 }
 
+
+/*
+[css 접두어]
+css의 속성들이 모든 브라우저에서 호환되는 것은 아니므로 접두어를 활용한다
+이를 통해 모든 브라우저에서 똑같은 동작을 하도록 표준화시켜주는 것이다
+-webkit- : Safari, Chrome, Android
+-moz- : FireFox
+*/
+/*
+[베지어 곡선]
+곡선을 매끄럽게 잘 그릴 수 있게끔 해주는 곡선 알고리즘
+1차 베지어 곡선(linear-bezier-curve)
+2차 베지어 곡선(quadratic-bezier-curve)
+3차 베지어 곡선(cubic-bezier-curve)
+*/
 .menu1::before {
   content: '';
   position: absolute;
@@ -45,7 +60,7 @@ li {
   background: #000040;
   box-shadow: inset 0px 0px 0px #6098FF;
   display: block;
-  -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+  -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1); 
   transition: all 0.4s cubic-bezier(.5, .24, 0, 1)
 }
 
@@ -89,6 +104,9 @@ a:active {
     text-decoration: none;
 }
 
+/*RGBA는 red green blue alpha를 의미한다.
+색 공간으로 정의되기도 하지만 실제로는 3개의 RGB 색 모델에
+4번째 알파 채널이 보충된 것이다.  */
 .logout {
 	background-color: rgba(0,0,0,0);
 	border:0;

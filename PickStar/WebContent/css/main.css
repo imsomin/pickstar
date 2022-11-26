@@ -4,7 +4,7 @@
 {
 	height:100vh;
 	width:100vw;
-	background-image: url("../images/mainstar.jpg");
+	background-image: url("../images/darksky.jpg");
 	background-size: cover;
 }
 .image_login
@@ -14,7 +14,7 @@
 	 position: relative;
 	 top: 100px;
 	 left:200px;
-	background-image: url("../images/login_star.jpg");
+	background-image: url("../images/nightsky.jpg");
 	background-size: cover;
 }
 .image_join
@@ -24,7 +24,7 @@
 	 position: relative;
 	 top: 100px;
 	 left:200px;
-	background-image: url("../images/join_gb.jpg");
+	background-image: url("../images/trash.jpg");
 	background-size: cover;
 }
 .main_btn
@@ -53,32 +53,34 @@
      width:500px;
 	 opacity: 0.7;	 
 }
+
+/*
+word-spacing : 단어 사이의 간격 조절
+letter-spacing : 텍스트 사이의 간격 조절
+*/
 .mainh1
 {
-
 	position: relative;
   	top: 100px;
   	left:200px;
   	font-size: 250%;
  	font-weight: bold;
   	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-  	
-  	/*
-  	color: #666;
-  	border-bottom: 2px solid #ccc;
-  	border-left: 10px solid #55555B; 
-  	*/
   	text-height:200%;
   	padding: 3px 5px;
   	margin: 5px 0;
   	letter-spacing: 1px;
   	word-spacing: 3px;
-
 }
 
-
-
-
+/*
+[css 애니메이션]
+-@keyframes : 애니메이션 중간중간의 특정 지점들을 거칠 수 있는 키프레임을 설정하여
+  브라우저가 자동으로 애니메이션을 처리하는 것보다 더 세밀하게 중간 동작 제어 가능
+-transition : css 스타일 변경을 부드럽게 표현하기 위해 지속 시간을 부여하여 속도 조절
+-transform : 요소에 이동(translate), 회전(rotate), 확대축소(scale), 
+  비틀기(skew) 등의 효과를 부여하기 위한 함수를 제공
+*/
 @keyframes txtE {
   60% {
     transform: translate(20px, 0) scale(1);
@@ -101,6 +103,11 @@
     color:white;
   }
 }
+
+/*
+nth-of-type(n) : 부모 엘리먼트의 특정 자식 엘리먼트 중 n번째
+nth-child(n) : 부모 엘리먼트의 모든 자식 엘리먼트 중 n번째
+*/
 .txt_animate span:nth-of-type(2) {
   animation-delay: .1s;
 }
